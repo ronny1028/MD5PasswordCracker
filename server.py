@@ -46,7 +46,6 @@ def guess100kTimes(c):
     global searchCount
     #global flag for whether answer is found
     global found
-    global timer1
      
     data = c.recv(1024) 
     #The worker sends a message when its connection to server is created
@@ -98,6 +97,7 @@ def guess100kTimes(c):
 
 def Main():
     global PASSWORD_DIGEST
+    global timer1
 
     #hard-coded public routable IP address and port number
     host = '143.215.216.202'   
